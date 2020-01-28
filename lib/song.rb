@@ -13,8 +13,6 @@ class Song
   def self.all
     @@all
   end 
-   def doctors
-    appointments.map(&:doctor)
-  end
+  
 end 
     
