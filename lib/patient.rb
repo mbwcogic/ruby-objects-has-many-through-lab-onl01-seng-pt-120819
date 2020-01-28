@@ -1,4 +1,4 @@
-class Doctor 
+class Patient 
 attr_accessor :name
 
 @@all = []
@@ -10,9 +10,9 @@ attr_accessor :name
   def self.all 
     @@all 
   end 
-  #def appointments
-    #Appointment.all.select {|appointment| appointment.doctor == self}
-  #end
+  def appointments
+    Appointment.all.select {|appointment| appointment.patient == self}
+  end
   
 end
  
