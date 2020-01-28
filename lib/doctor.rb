@@ -16,4 +16,7 @@ attr_accessor :name
   def new_appointment(date, patient)
     Appointment.new(name, self, patient)
   end
+  def patient
+    a.map(&:genre)
+  end
 end
