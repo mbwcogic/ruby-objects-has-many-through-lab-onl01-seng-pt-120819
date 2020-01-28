@@ -13,8 +13,8 @@ class Song
   def self.all
     @@all
   end 
-  #say_hi
-   # puts 'hi'
- # end
+   def doctors
+    appointments.map(&:doctor)
+  end
 end 
     
