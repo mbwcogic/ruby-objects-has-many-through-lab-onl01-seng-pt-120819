@@ -21,6 +21,6 @@ class Artist
   end
 
   def genres
-    appointment.map(&:patients)
+    songs.map(&:genres)
   end
 end
