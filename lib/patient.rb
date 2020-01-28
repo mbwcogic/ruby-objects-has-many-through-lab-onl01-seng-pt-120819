@@ -14,7 +14,7 @@ attr_accessor :name
     Appointment.all.select {|appointment| appointment.patient == self}
   end
   def new_appointment(patient, date)
-    Appointment.new(name, patient, self)
+    Appointment.new(name, doctor, self)
   end
 end
  
